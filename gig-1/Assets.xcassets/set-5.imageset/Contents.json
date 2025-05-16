@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "daniel-apodaca-WdoQio6HPVA-unsplash.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "daniel-apodaca-WdoQio6HPVA-unsplash 1.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "daniel-apodaca-WdoQio6HPVA-unsplash 2.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

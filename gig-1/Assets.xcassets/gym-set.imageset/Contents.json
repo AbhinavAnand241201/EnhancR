@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "anastase-maragos-7kEpUPB8vNk-unsplash.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "anastase-maragos-7kEpUPB8vNk-unsplash 1.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "anastase-maragos-7kEpUPB8vNk-unsplash 2.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
