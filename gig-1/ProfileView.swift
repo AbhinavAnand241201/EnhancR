@@ -1,13 +1,20 @@
 import SwiftUI
 
+struct ProfileStat: Identifiable, Hashable {
+    let id = UUID()
+    let icon: String
+    let label: String
+    let value: String
+}
+
 class ProfileViewModel: ObservableObject {
     @Published var name: String = "Alex Johnson"
     @Published var email: String = "alex.johnson@email.com"
     @Published var profileImage: String? = nil // Use asset name or nil for default
-    @Published var stats: [(icon: String, label: String, value: String)] = [
-        ("flame.fill", "Workouts", "24"),
-        ("note.text", "Logs", "12"),
-        ("camera.fill", "Selfies", "8")
+    @Published var stats: [ProfileStat] = [
+        ProfileStat(icon: "flame.fill", label: "Workouts", value: "24"),
+        ProfileStat(icon: "note.text", label: "Logs", value: "12"),
+        ProfileStat(icon: "camera.fill", label: "Selfies", value: "8")
     ]
 }
 
@@ -56,7 +63,7 @@ struct ProfileView: View {
                         .foregroundColor(.secondary)
                     // Stats Cards
                     HStack(spacing: 20) {
-                        ForEach(viewModel.stats, id: \.(label)) { stat in
+                        ForEach(viewModel.stats) { stat in
                             ProfileStatCard(icon: stat.icon, label: stat.label, value: stat.value)
                         }
                     }
